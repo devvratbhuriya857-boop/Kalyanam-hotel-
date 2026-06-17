@@ -28,6 +28,12 @@ export const KALYANAM_ROOMS: Room[] = [
       'In-room Digital Safe'
     ],
     image: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=1200',
+    gallery: [
+      'https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=1200',
+      'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=1200',
+      'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=1200',
+      'https://images.unsplash.com/photo-1591088398332-8a7791972843?q=80&w=1200'
+    ],
     rating: 4.9,
     reviewsCount: 142
   },
@@ -53,6 +59,12 @@ export const KALYANAM_ROOMS: Room[] = [
       'Pillow Menu (Silk, Memory Foam, Feather)'
     ],
     image: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1200',
+    gallery: [
+      'https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1200',
+      'https://images.unsplash.com/photo-1507038772120-7bef736b477c?q=80&w=1200',
+      'https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=1200',
+      'https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=1200'
+    ],
     rating: 5.0,
     reviewsCount: 88
   },
@@ -78,6 +90,12 @@ export const KALYANAM_ROOMS: Room[] = [
       'Acoustically Treated Lounge with Premium Acoustics'
     ],
     image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1400',
+    gallery: [
+      'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1400',
+      'https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1200',
+      'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200',
+      'https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?q=80&w=1200'
+    ],
     rating: 5.0,
     reviewsCount: 41
   }

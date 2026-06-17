@@ -18,6 +18,7 @@ export interface Room {
   pricePerNight: number;
   featuredAmenities: string[];
   image: string;
+  gallery?: string[];
   rating: number;
   reviewsCount: number;
 }
