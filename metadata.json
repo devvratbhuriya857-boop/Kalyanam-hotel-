@@ -1,0 +1,6 @@
+{
+  "name": "Kalyanam Hotel & Resort",
+  "description": "Luxurious sanctuary on Sanwali Road, Sikar, combining traditional Rajasthani warmth with modern comfort. Features fluid page transitions, smooth momentum scrolling, parallax imagery, events space planning, and a premium room booking engine with dummy payment checkout.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
