@@ -4,7 +4,7 @@
  */
 
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence, useScroll, useSpring } from 'motion/react';
 import Lenis from 'lenis';
 import { 
   Sparkles, 
@@ -31,6 +31,14 @@ import { TESTIMONIALS } from './data';
 export default function App() {
   const [activeSection, setActiveSection] = useState('hero');
   const [welcomeComplete, setWelcomeComplete] = useState(false);
+
+  // Buttery-smooth golden progress calculation
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
   
   // States to pass search parameters from Hero and Suite cards directly to booking engine
   const [bookingParams, setBookingParams] = useState<{
@@ -158,6 +166,13 @@ export default function App() {
             id="kalyanam-applet-root"
             className="min-h-screen bg-transparent selection:bg-amber-400 selection:text-stone-950 leading-normal text-[#FAF6F0] font-sans"
           >
+            {/* Elegant Golden Scroll Progress Bar */}
+            <motion.div 
+              id="top-scroll-progress"
+              className="fixed top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-amber-500 via-amber-300 to-amber-500 origin-left z-[130] shadow-[0_2px_12px_rgba(251,191,36,0.5)]"
+              style={{ scaleX }}
+            />
+
             {/* Dynamic Ambient Blur Background Layer */}
             <div className="absolute top-0 inset-x-0 h-[800px] bg-gradient-to-b from-[#1A1613]/20 to-transparent pointer-events-none z-10" />
 
